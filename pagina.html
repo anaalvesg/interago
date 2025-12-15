@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma para Sites, Loja Virtual e Portal de Notícia - Interago</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.interago.com.br/App/Sites/379/mc/logoEFavicon/favicon.png" type="image/x-icon">
 </head>
 <body> 
     <!-- barra de navegação -->
-    <header>
+    <header class="header-pag">
         <nav>
             <div>
                 <img src="https://www.interago.com.br/App/Sites/379/mc/logoEFavicon/logoInteragoVetor.svg" alt="Logo Plataforma Interago">
-                <div>
-                    <a href="#"> Acesse sua conta </a>
-                    <a href="#"> Suporte </a >
+                <div class="btn-group">
+                    <a href="#" class="primary-btn"> Acesse sua conta </a>
+                    <a href="#" class="secondary-btn"> Suporte </a >
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <!-- inicial -->
-        <div>
-            <h1> Plataforma para e-commerce, portal de notícia, websites e CRM </h1>
-            <p> Uma plataforma 🇧🇷 brasileira que reúne recursos de ponta para amplificar seu negócio na internet </p>
-            <a href="#"> Agendar demonstração </a>
-            <img src="midias/inicial-interago.png" alt="Tela Inicial Interago">
-            <div>
-                <img src="midias/imagemRelatorioVendas.png" alt="Relatório de Vendas">
-                <img src="midias/imagemRelatorioVisitas.png" alt="Relatório de Visitas">
+        <div class="section1">
+            <div class="box-s1">
+                <h1> Plataforma para e-commerce, portal de <br> notícia, websites e CRM </h1>
+                <p> Uma plataforma 🇧🇷 brasileira que reúne recursos de ponta para <br> amplificar seu negócio na internet </p>
+                <a href="#" class="primary-btn" style="width: fit-content"> Agendar demonstração </a>
+                <div class="main-img">
+                    <img src="midias/inicial-interago.png" alt="Tela Inicial Interago">
+                </div>
+                <div class="secondary-imgs">
+                    <img src="midias/imagemRelatorioVendas.png" alt="Relatório de Vendas">
+                    <img src="midias/imagemRelatorioVisitas.png" alt="Relatório de Visitas">
+                </div>
             </div>
         </div>
         <!-- passos da plataforma -->
-        <div>
-            <div >
+        <div class="section2">
+            <div class="steps-list">
                 <ol type="1">
                     <li><a title="Acesse a etapa para solicitar seu site" href="#">Solicite seu site</a></li>
                     <li><a title="Acesse a etapa de venda on-line" href="#">Venda on-line</a></li>
@@ -43,9 +48,10 @@
                     <li><a title="Acesse a etapa para obter resultados" href="#">Obtenha resultados</a></li>
                 </ol>
             </div>
-            <div>
+            <div class="box-s2">
                 <h1>Dê o primeiro passo para elevar seu negócio para o próximo nível com a internet</h1>
                 <p>Com um ambiente desenvolvido para atender diferentes categorias de sites, o Interago oferece excelência na criação de lojas virtuais, portais de notícias e sites institucionais. O primeiro passo para o sucesso é dado ao falar com nossos especialistas para conhecer todas as oportunidades para sua empresa.</p>
+                <a href="#" class="primary-btn"> Começar agora </a>
             </div>
             <div>
                 <!-- ta faltando img / carrossel ? -->
@@ -56,7 +62,7 @@
         </div>
         <!-- integrações / cards -->
         <div>
-            <span> integrações </span>
+            <p class="em-text"> integrações </p>
             <h1> Integrações seguras e fundamentais para o sucesso. </h1>
             <section id="integracoes">
                 <div>
@@ -89,26 +95,26 @@
         <div>
             <div>
                 <div>
-                    <span>infraestrutura 100% em cloud</span>
+                    <p class="em-text">infraestrutura 100% em cloud</p>
                     <h1>Sistema preparado para negócios de pequeno, médio e grande porte.</h1>
                 </div>
                 <div>
                     <ul>
                         <li>
-                            <img src="midias/Ícones/iconeMetadados.svg" alt=""> <span>Seu projeto sempre on-line. Utilizamos os serviços de Cloud da Amazon AWS (maior do segmento).</span>
+                            <img src="https://www.interago.com.br/App/Sites/379/mc/icones/iconeCheck.svg" alt="Ícone Check Lista do Interago"> <span>Seu projeto sempre on-line. Utilizamos os serviços de Cloud da Amazon AWS (maior do segmento).</span>
                         </li>
                         <li>
-                            <img src="midias/Ícones/iconeMetadados.svg" alt=""> <span>Disparos de e-mail com segurança e escala garantida.</span>
+                            <img src="https://www.interago.com.br/App/Sites/379/mc/icones/iconeCheck.svg" alt="Ícone Check Lista do Interago"> <span>Disparos de e-mail com segurança e escala garantida.</span>
                         </li>
                         <li>
-                            <img src="midias/Ícones/iconeMetadados.svg" alt=""> <span>Suas mídias disponibilizadas em CDN (content delivery network). Seu conteúdo otimizado e disponível para usuários em diferentes dispositivos e dados móveis.</span>
+                            <img src="https://www.interago.com.br/App/Sites/379/mc/icones/iconeCheck.svg" alt="Ícone Check Lista do Interago"> <span>Suas mídias disponibilizadas em CDN (content delivery network). Seu conteúdo otimizado e disponível para usuários em diferentes dispositivos e dados móveis.</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div>
                 <div>
-                    <span>webvitals</span>
+                    <p class="em-text">webvitals</p>
                     <h1>Tenha seu site otimizado nas pesquisas do Google.</h1>
                 </div>
                 <div>
@@ -135,7 +141,7 @@
         </div>
         <!-- visibilidade / temas -->
         <div>
-            <span>visibilidade</span>
+            <p class="em-text">visibilidade</p>
             <h1>O sistema se adapta a você. Experimente outro estilo.</h1>
             <div>
                 <button type="button">
@@ -148,13 +154,13 @@
                 </button>
             </div>
             <div>
-                <p>cade a imagem???</p>
+                <img src="https://cdn.interago.com.br/img/png/w_0_q_8/379/mc/01-Inicial/telasEscuroClaro//tema_claro" alt="Telas Tema Claro Interago">
             </div>
         </div>
         <!-- acesso rapido -->
         <div>
             <div>
-                <p>acesso rápido</p>
+                <p class="em-text">acesso rápido</p>
                 <h1>Precisa de ajuda?</h1>
             </div>
             <div>
@@ -194,10 +200,10 @@
         <div>
             <div>
                 <h1>Uma plataforma pensada em você. <br> Agende uma demonstração.</h1>
-                <a href="#">Agendar agora</a>
+                <a href="#" class="primary-btn">Agendar agora</a>
             </div>
             <div>
-                <h1>Plataforma</h1>
+                <h2>Plataforma</h2>
                 <ul>
                     <li><a href="#" title="Acessar página da solução Criação de Lojas Virtuais da Eco Webdesign">Inicial</a></li>
                     <li><a href="#" title="Acessar página da solução Webdesign Profissional da Eco Webdesign">Agende uma demonstração</a></li>
@@ -213,7 +219,7 @@
                 <span>2025</span> Interago - Plataforma de Experiência Digital - Todos os direitos reservados - CNPJ 12.768.802/0001-25.
             </p>
             <p>Uma marca do 
-                <a href="https://prolifera.group">"Grupo Prolifera Soluções Digitais
+                <a href="https://prolifera.group"> Grupo Prolifera Soluções Digitais
                 <img src="https://cdn.interago.com.br/img/png/w_20_q_8/40/mc/logotipos//ilustracaoProlifera" alt="Logo Grupo Prolifera">
             </a>
             </p>

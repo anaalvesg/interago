@@ -1,12 +1,138 @@
-.btn {
-    border-radius: 16px; 
-    padding: 16 8;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/* .navbar-brand {
-    width: 147px;
-    height: 28px;
+nav > div {
+    padding: 10px 0;
+    height: 35px;
+    background-color: #11141a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-group {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-group > .primary-btn {
+    font-size: 0.8rem;
+}
+
+.primary-btn {
+    /* background-color: #3796f0; */
+    background: linear-gradient(to right, #3796f0, #50a4f3);
+    color: white;
+    border-radius: 16px; 
+    padding: 6px 16px;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.secondary-btn {
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    border-radius: 16px; 
+    padding: 6px 16px;
+    font-size: 0.8em;
+}
+
+.secondary-btn:hover {
+    background-color: white;
+    color: #080a0e;
+    transition-duration: 1s;
+    /* transition-property: background-color; */
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.section1 {
+    background: radial-gradient(#06070a, #03101a);
+    color: whitesmoke;
+    font-weight: 500;
+    padding-top: 80px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box-s1 {
+    margin: auto;
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}   
+
+.box-s1 > h1 {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.box-s1 > p {
+    font-size: 20px;
+}
+
+.main-img > img {
+    width: 70%;
+    filter: blur(0.7px);
+}
+
+/* .secondary-imgs {
+    z-index: 99999;
+
 } */
-#integracoes {
-    background-color: black;
+
+.em-text {
+    color: #2670b6;
+    font-weight: 500;
+}
+
+.section2 {
+    background-color: white;
+    color: black;
+    padding: 80px 50px;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 15%;
+}
+
+.steps-list {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.steps-list > ol > li > a{
+    color: black;
+    height: 469px;
+}
+
+.box-s2 {
+    width: 30%;
+    height: fit-content;
+}
+
+.box-s2 > p {
+    font-weight: 400;
 }
