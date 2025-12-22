@@ -354,7 +354,8 @@
         document.querySelector("#btn-dark-theme").addEventListener("click", function () {
             document.querySelector(".section5").classList.toggle("dark-theme");
             document.querySelector("#img-tema").src = "https://cdn.interago.com.br/img/png/w_0_q_8/379/mc/01-Inicial/telasEscuroClaro//tema_escuro";
-            document.querySelector(".btn-temas").classList.toggle("dark-theme-botao");
+            document.querySelector("#btn-light-theme").classList.toggle("dark-theme-botao");
+            document.querySelector("#btn-dark-theme").classList.toggle("dark-theme-botao-active");
             document.querySelector("#icon-claro").src = "https://www.interago.com.br/App/Sites/379/mc/01-Inicial/iconeTemaClaroEscuro.svg";
             document.querySelector("#icon-claro2").src = "https://www.interago.com.br/App/Sites/379/mc/01-Inicial/iconeTemaEscuroClaro.svg"
         })
