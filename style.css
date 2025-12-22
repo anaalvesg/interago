@@ -79,7 +79,6 @@ body p {
 }
 
 .section1 {
-    /* background: radial-gradient(#06070a, #03101a); */
     background: radial-gradient(circle farthest-corner at 70% 10%, #0c0f16 23%, #003c5f 50%) top right / 200% 200%;;
     color: var(--cWhite);
     font-weight: 500;
@@ -164,7 +163,7 @@ body p {
     margin: auto;
     background-color: var(--cWhite);
     color: var(--cBlack);
-    padding: 60px 50px;
+    padding: 60px 70px 150px;
     width: 100%;
     font-weight: 500;
     display: flex;
@@ -242,6 +241,25 @@ body p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.logo-clientes {
+    padding: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-clientes a img {
+    width: 120px;
+    height: auto;
+    filter: brightness(0.4) grayscale(1);
+}
+
+.logo-clientes a:hover {
+    transform: scale(1.02);
 }
 
 .section3 {
@@ -400,11 +418,68 @@ body p {
     font-size: 14px;
 }
 
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-track {
+    display: flex;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: scroll 30s linear infinite;
+    
+}
+
+.itens-carrossel {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.itens-carrossel {
+    list-style-type: "";
+}
+
+.item {
+    min-width: 300px;
+    margin-right: 40px;
+}
+
+.item a {
+    display: block;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
 .section5 {
     background-color: var(--cIceWhite);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.dark-theme {
+    background-color: var(--cBlack);
 }
 
 .btn-group-s5 {
@@ -472,6 +547,7 @@ button:hover {
     color: var(--cBlack);
     font-weight: 600;
     font-size: 14px;
+    display: block;
 }
 
 .card-s5 p {
