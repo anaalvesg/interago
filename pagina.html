@@ -258,17 +258,17 @@
                 <h1>O sistema se adapta a você. Experimente outro estilo.</h1>
             </div>
             <div class="btn-group-s5">
-                <button id="btn-light-theme" type="button" class="active">
-                    <img src="midias/Ícones/iconeTemaClaro.svg" alt="Ícone Tema Claro Interago"> 
+                <button id="btn-light-theme" type="button" class="btn-temas">
+                    <img  id="icon-claro" src="midias/Ícones/iconeTemaClaro.svg" alt="Ícone Tema Claro Interago"> 
                     <span>tema claro</span>
                 </button>
-                <button id="btn-dark-theme" type="button">
-                    <img src="midias/Ícones/iconeTemaEscuro.svg" alt="Ícone Tema Escuro Interago"> 
+                <button id="btn-dark-theme" type="button" class="btn-temas">
+                    <img id="icon-claro-2" src="midias/Ícones/iconeTemaEscuro.svg" alt="Ícone Tema Escuro Interago"> 
                     <span>tema escuro</span>
                 </button>
             </div>
-            <div class="s5-img">
-                <img src="https://cdn.interago.com.br/img/png/w_0_q_8/379/mc/01-Inicial/telasEscuroClaro//tema_claro" alt="Telas Tema Claro Interago">
+            <div id="s5-img">
+                <img id="img-tema" src="https://cdn.interago.com.br/img/png/w_0_q_8/379/mc/01-Inicial/telasEscuroClaro//tema_claro" alt="Telas Tema Claro Interago">
             </div>
         </div>
         <!-- acesso rapido -->
@@ -351,8 +351,12 @@
         </div>
     </footer>
     <script>
-        document.querySelector("#l1").addEventListener("click", function () {
-            const div = document.querySelector
+        document.querySelector("#btn-dark-theme").addEventListener("click", function () {
+            document.querySelector(".section5").classList.toggle("dark-theme");
+            document.querySelector("#img-tema").src = "https://cdn.interago.com.br/img/png/w_0_q_8/379/mc/01-Inicial/telasEscuroClaro//tema_escuro";
+            document.querySelector(".btn-temas").classList.toggle("dark-theme-botao");
+            document.querySelector("#icon-claro").src = "https://www.interago.com.br/App/Sites/379/mc/01-Inicial/iconeTemaClaroEscuro.svg";
+            document.querySelector("#icon-claro2").src = "https://www.interago.com.br/App/Sites/379/mc/01-Inicial/iconeTemaEscuroClaro.svg"
         })
     </script>
 </body>
