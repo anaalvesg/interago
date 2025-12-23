@@ -44,7 +44,6 @@ nav > .box-header {
 }
 
 .primary-btn {
-    /* background-color: #3796f0; */
     background: linear-gradient(to right, #3796f0, #50a4f3);
     color: var(--cWhite);
     border-radius: 16px; 
@@ -52,6 +51,11 @@ nav > .box-header {
     font-size: 0.9rem;
     z-index: 99;
     font-weight: 500;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(#338de0, #338de0);
+    color: var(--cWhite);
 }
 
 a {
@@ -71,7 +75,6 @@ a {
     background-color: var(--cWhite);
     color: #080a0e;
     transition-duration: 1s;
-    /* transition-property: background-color; */
 }
 
 body p {
@@ -131,7 +134,7 @@ body p {
     width: 70%;
     filter: blur(0.7px);
     margin-top: -70px;
-    /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(150px) translateZ(0px) skewX(0deg) skewY(0deg); */
+    /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(5deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(30px) skewX(0deg) skewY(0deg); */
 }
 
 .main-img {
@@ -180,7 +183,7 @@ body p {
     justify-content: center;
 }
 
-.steps-list > ol > li > a{
+.steps-list a{
     color: var(--cBlack);
     height: 469px;
     font-size: 14px;
@@ -214,18 +217,10 @@ body p {
     width: fit-content;
 }
 
-.box-s2-2, .box-s2-3, .box-s2-4 {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    transition: all 0.3s cubic-bezier(0.6, 0.02, 0.41, 0.99);
-    transform: translateY(20px);
-    will-change: transform, opacity;
-}
-
 .box-gifs {
     width: 45vw; 
-    height: 70vh;
+    height: 90vh;
+    margin-top: -50px;
 }
 
 .box-gifs .c1 {

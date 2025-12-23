@@ -43,36 +43,16 @@
         <div class="section2">
             <div class="steps-list">
                 <ol type="1">
-                    <li id="l1"><a title="Acesse a etapa para solicitar seu site" href="#">Solicite seu site</a></li>
-                    <li id="l2"><a title="Acesse a etapa de venda on-line" href="#">Venda on-line</a></li>
-                    <li id="l3"><a title="Acesse a etapa de gerenciamento" href="#">Gerencie</a></li>
-                    <li id="l4"><a title="Acesse a etapa para obter resultados" href="#">Obtenha resultados</a></li>
+                    <li id="l1"><a title="Acesse a etapa para solicitar seu site" href="#c1">Solicite seu site</a></li>
+                    <li id="l2"><a title="Acesse a etapa de venda on-line" href="#c1">Venda on-line</a></li>
+                    <li id="l3"><a title="Acesse a etapa de gerenciamento" href="#c1">Gerencie</a></li>
+                    <li id="l4"><a title="Acesse a etapa para obter resultados" href="#c1">Obtenha resultados</a></li>
                 </ol>
             </div>
             <div class="box-conteudo">
                 <div id="c1" class="box-s2">
                     <h1>Dê o primeiro passo para elevar seu negócio para o próximo nível com a internet</h1>
                     <p>Com um ambiente desenvolvido para atender diferentes categorias de sites, o Interago oferece excelência na criação de lojas virtuais, portais de notícias e sites institucionais. O primeiro passo para o sucesso é dado ao falar com nossos especialistas para conhecer todas as oportunidades para sua empresa.</p>
-                    <a href="#" class="primary-btn"> Começar agora </a>
-                </div>
-                <div id="c2" class="box-s2-2">
-                    <h1>Aumente seu faturamento vendendo on-line.</h1>
-                    <p>Integramos todo o ambiente de e-commerce com as melhores soluções de gerenciamento de pedidos, logística e pagamentos do mercado, proporcionando uma experiência segura e intuitiva a lojistas e clientes. <br>
-                    Disponibilize seu catálogo de produtos em seu projeto de site e usufrua de nosso checkout inteligente, onde seu cliente estará de 4 a 7 cliques de distância de comprar seu produto.</p>
-                    <a href="#" class="primary-btn"> Começar agora </a>
-                </div>
-                <div id="c3" class="box-s2-3">
-                    <h1>Você terá acesso por celular ou desktop, em um ambiente responsivo e intuitivo.</h1>
-                    <p>Ao vender on-line, gerencie seus pedidos, dispare e-mails, controle estoque e compare resultados a partir de relatórios;
-                    <br><br>
-                    Criadores de conteúdo pode gerenciar autores, equipes de redação, quantidade de acessos em principais matérias e incorporação de ferramentas de mídias programáticas;
-                    <br><br>
-                    Com sites institucionais personalizados, controle seu conteúdo de texto, atualize banners ou até mesmo edite HTML, CSS e javaScript.</p>
-                    <a href="#" class="primary-btn"> Começar agora </a>
-                </div>
-                <div id="c4" class="box-s2-4">
-                    <h1>Acompanhe o seu desempenho</h1>
-                    <p>Receba através de e-mail e WhatsApp relatórios mensais de desempenho do seu site. Quantidade de pedidos, faturamento, acessos e leads. Dados essenciais para tomadas de decisões estratégicas com foco em aumento de faturamento.</p>
                     <a href="#" class="primary-btn"> Começar agora </a>
                 </div>
             </div>
@@ -82,17 +62,9 @@
                             <source src="https://www.interago.com.br/App/Sites/379/mc/01-Inicial/videosLoopSecao2/requestContact.mp4" type="video/mp4">
                         </video>
                 </div>
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
             </div>
         </div>
+        <!-- logo clientes clicaveis -->
         <div class="logo-clientes">
             <a href="https://poytara.com/">
                 <img src="https://cdn.interago.com.br/img/png/w_0_q_8/40/mc/001.paginaInicial/clientes//LogoPoytara" alt="Logo Poytara"></a>
@@ -193,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- carrossel aqui deus nos ajude -->
+            <!-- carrossel -->
             </div>
             <div id="carrossel">
                 <div class="img-track">
@@ -384,6 +356,72 @@
                 iconEscuro.src = "midias/Ícones/iconeTemaEscuroClaro.svg";
             }
         };
+
+        document.querySelector("#l1").addEventListener("click", function () {
+            const div = document.querySelector("#c1");
+            const video = document.querySelector(".c1")
+
+            div.innerHTML = `
+            <h1>Dê o primeiro passo para elevar seu negócio para o próximo nível com a internet</h1>
+            <p>Com um ambiente desenvolvido para atender diferentes categorias de sites, o Interago oferece excelência na criação de lojas virtuais, portais de notícias e sites institucionais. O primeiro passo para o sucesso é dado ao falar com nossos especialistas para conhecer todas as oportunidades para sua empresa.</p>
+            <a href="#" class="primary-btn"> Começar agora </a>`
+
+            video.innerHTML = `
+            <video width="500" height="100%" autoplay loop muted>
+                <source src="https://www.interago.com.br/App/Sites/379/mc/01-Inicial/videosLoopSecao2/requestContact.mp4" type="video/mp4">
+            </video>`
+        });
+
+        document.querySelector("#l2").addEventListener("click", function () {
+            const div = document.querySelector("#c1");
+            const video = document.querySelector(".c1");
+
+            div.innerHTML = `
+            <h1>Aumente seu faturamento vendendo on-line.</h1>
+            <p>Integramos todo o ambiente de e-commerce com as melhores soluções de gerenciamento de pedidos, logística e pagamentos do mercado, proporcionando uma experiência segura e intuitiva a lojistas e clientes. <br>
+            Disponibilize seu catálogo de produtos em seu projeto de site e usufrua de nosso checkout inteligente, onde seu cliente estará de 4 a 7 cliques de distância de comprar seu produto.</p>
+            <a href="#" class="primary-btn"> Começar agora </a>`
+
+            video.innerHTML = `
+            <video width="500" height="100%" autoplay loop muted>
+                <source src="https://www.interago.com.br/App/Sites/379/mc/01-Inicial/videosLoopSecao2/sellerLoopVideo.mp4" type="video/mp4">
+            </video>`
+        });
+
+        document.querySelector("#l3").addEventListener("click", function () {
+            const div = document.querySelector("#c1");
+            const video = document.querySelector(".c1");
+
+
+            div.innerHTML = `
+            <h1>Você terá acesso por celular ou desktop, em um ambiente responsivo e intuitivo.</h1>
+            <p>Ao vender on-line, gerencie seus pedidos, dispare e-mails, controle estoque e compare resultados a partir de relatórios;
+            <br><br>
+            Criadores de conteúdo pode gerenciar autores, equipes de redação, quantidade de acessos em principais matérias e incorporação de ferramentas de mídias programáticas;
+            <br><br>
+            Com sites institucionais personalizados, controle seu conteúdo de texto, atualize banners ou até mesmo edite HTML, CSS e JavaScript.</p>
+            <a href="#" class="primary-btn"> Começar agora </a>`
+
+            video.innerHTML = `
+            <video width="500" height="100%" autoplay loop muted>
+                <source src="https://www.interago.com.br/App/Sites/379/mc/01-Inicial/videosLoopSecao2/videoFinalGerenciamentoOtm.mp4" type="video/mp4">
+            </video>`
+        });
+        
+        document.querySelector("#l4").addEventListener("click", function () {
+            const div = document.querySelector("#c1");
+            const video = document.querySelector(".c1");
+
+            div.innerHTML = `
+            <h1>Acompanhe o seu desempenho</h1>
+            <p>Receba através de e-mail e WhatsApp relatórios mensais de desempenho do seu site. Quantidade de pedidos, faturamento, acessos e leads. Dados essenciais para tomadas de decisões estratégicas com foco em aumento de faturamento.</p>
+            <a href="#" class="primary-btn"> Começar agora </a>`
+
+            video.innerHTML = `
+            <video width="500" height="100%" autoplay loop muted>
+                <source src="https://www.interago.com.br/App/Sites/379/mc/01-Inicial/videosLoopSecao2/gifGraphsFinalmp4 2.mp4" type="video/mp4">
+            </video>`
+        })
     </script>
 </body>
 </html>
