@@ -166,7 +166,7 @@ body p {
     margin: auto;
     background-color: var(--cWhite);
     color: var(--cBlack);
-    padding: 60px 70px 150px;
+    padding: 60px 40px 150px;
     width: 100%;
     font-weight: 500;
     display: flex;
@@ -198,7 +198,7 @@ body p {
 .step:not(:last-child)::after {
     content: '';
     position: absolute;
-    left: 8px;
+    left: 7px;
     top: 22px;
     width: 2px;
     height: 48px;
@@ -226,10 +226,12 @@ body p {
     background: #222;
     border-color: #222;
 }
+
 .step.active .step-circle {
     box-shadow: 0 0 0 4px rgba(30,113,227,0.08);
     animation: fill-bounce 0.35s cubic-bezier(0.4,0,0.2,1);
 }
+
 @keyframes fill-bounce {
     0% {
         transform: scale(1);
@@ -246,9 +248,7 @@ body p {
 }
 
 .step-number {
-    font-size: 1.1rem;
     color: #191919;
-    font-weight: 600;
     margin-right: 10px;
     font-family: 'Raleway', sans-serif;
     min-width: 1.5em;
@@ -256,9 +256,9 @@ body p {
 }
 
 .step-label {
-    font-size: 1.1rem;
     color: #191919;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 14px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.01em;
 }
