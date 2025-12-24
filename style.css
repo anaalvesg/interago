@@ -245,6 +245,16 @@ body p {
     }
 }
 
+.step-number {
+    font-size: 1.1rem;
+    color: #191919;
+    font-weight: 600;
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;
+    min-width: 1.5em;
+    text-align: right;
+}
+
 .step-label {
     font-size: 1.1rem;
     color: #191919;
