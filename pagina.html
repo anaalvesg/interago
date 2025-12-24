@@ -42,11 +42,23 @@
         <!-- passos da plataforma -->
         <div class="section2">
             <div class="steps-list">
-                <ol type="1">
-                    <li id="l1"><a title="Acesse a etapa para solicitar seu site" href="#c1">Solicite seu site</a></li>
-                    <li id="l2"><a title="Acesse a etapa de venda on-line" href="#c1">Venda on-line</a></li>
-                    <li id="l3"><a title="Acesse a etapa de gerenciamento" href="#c1">Gerencie</a></li>
-                    <li id="l4"><a title="Acesse a etapa para obter resultados" href="#c1">Obtenha resultados</a></li>
+                <ol class="stepper" type="1">
+                    <li id="l1" class="step">
+                        <span class="step-circle"></span>
+                        <a class="label" title="Acesse a etapa para solicitar seu site" href="#c1">Solicite seu site</a>
+                    </li>
+                    <li id="l2" class="step">
+                        <span class="step-circle"></span>
+                        <a class="label" title="Acesse a etapa de venda on-line" href="#c1">Venda on-line</a>
+                    </li>
+                    <li id="l3" class="step">
+                        <span class="step-circle"></span>
+                        <a class="label" title="Acesse a etapa de gerenciamento" href="#c1">Gerencie</a>
+                    </li>
+                    <li id="l4" class="step">
+                        <span class="step-circle"></span>
+                        <a class="label" title="Acesse a etapa para obter resultados" href="#c1">Obtenha resultados</a>
+                    </li>
                 </ol>
             </div>
             <div class="box-conteudo">
@@ -229,7 +241,7 @@
                 <p class="em-text">visibilidade</p>
                 <h1>O sistema se adapta a você. Experimente outro estilo.</h1>
             </div>
-            <div class="btn-group-s5">
+            <div class="theme-control">
                 <button id="btn-light-theme" type="button" class="light-theme-botao-active">
                     <img  id="icon-claro" src="midias/Ícones/iconeTemaClaro.svg" alt="Ícone Tema Claro Interago"> 
                     <span>tema claro</span>
@@ -356,6 +368,20 @@
                 iconEscuro.src = "midias/Ícones/iconeTemaEscuroClaro.svg";
             }
         };
+
+        // const section5 = document.querySelector(".section5");
+        // const btnLight = document.querySelector("#btn-light-theme");
+        // const btnDark = document.querySelector("#btn-dark-theme");
+
+        // btnDark.addEventListener("click", () => {
+        //     section5.classList.add("dark-theme");
+        // });
+
+        // btnLight.addEventListener("click", () => {
+        //     section5.classList.remove("dark-theme");
+        // });
+
+
 
         document.querySelector("#l1").addEventListener("click", function () {
             const div = document.querySelector("#c1");
