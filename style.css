@@ -198,25 +198,24 @@ body p {
 .step:not(:last-child)::after {
     content: '';
     position: absolute;
-    left: 7px;
-    top: 22px;
-    width: 2px;
-    height: 48px;
-    background: #222;
+    left: 5px;
+    top: 20px;
+    width: 1px;
+    height: 80px;
+    background: #adadad;
     z-index: 0;
 }
 
 .step-circle {
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #fff;
-    border: 2px solid #222;
     box-sizing: border-box;
     display: inline-block;
     margin-right: 18px;
     z-index: 1;
-    border: 2px solid #222;
+    border: 1px solid #adadad;
     transition: background 0.3s cubic-bezier(0.4,0,0.2,1), border-color 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
     position: relative;
 }
